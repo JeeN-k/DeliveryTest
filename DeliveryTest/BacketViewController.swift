@@ -1,19 +1,17 @@
 //
-//  ViewController.swift
+//  BacketViewController.swift
 //  DeliveryTest
 //
 //  Created by Oleg Stepanov on 13.12.2021.
 //
 
+import Foundation
 import UIKit
 
-class ViewController: UIViewController {
-
+class BacketViewController: UIViewController {
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        view.backgroundColor = .yellow
     }
-
-
 }
-
