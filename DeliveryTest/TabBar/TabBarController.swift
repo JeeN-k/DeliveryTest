@@ -12,8 +12,6 @@ class TabBarController: UITabBarController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        
-        
         let menuVC = MenuViewController()
         let contactsVC = ContactsViewController()
         let profileVC = ProfileViewController()

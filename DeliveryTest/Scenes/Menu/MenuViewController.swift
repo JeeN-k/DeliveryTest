@@ -21,6 +21,13 @@ class MenuViewController: UIViewController, MenuDisplayLogic, SectionsDelegate {
     let table = UITableView()
     let saleCollectionView = SaleCollectionView()
     let sectionCollectionView = SectionsCollectionView()
+    let cityLabel: UILabel = {
+        let label = UILabel()
+        label.text = "Москва ↓"
+        label.font = UIFont.boldSystemFont(ofSize: 16)
+        label.textColor = .black
+        return label
+    }()
     
     private var beerViewModel = BeerViewModel.init(cells: [])
     private var beerItems = [Beer]()
@@ -112,6 +119,7 @@ extension MenuViewController {
         self.view.addSubview(table)
         self.view.addSubview(saleCollectionView)
         self.view.addSubview(sectionCollectionView)
+        self.view.addSubview(cityLabel)
         
         updateConstraint()
         
@@ -126,12 +134,18 @@ extension MenuViewController {
         sectionCollectionView.translatesAutoresizingMaskIntoConstraints = false
         saleCollectionView.translatesAutoresizingMaskIntoConstraints = false
         table.translatesAutoresizingMaskIntoConstraints = false
+        cityLabel.translatesAutoresizingMaskIntoConstraints = false
         
-        saleCollectionView.anchor(top: view.topAnchor,
+        cityLabel.anchor(top: view.topAnchor,
+                         leading: view.leadingAnchor,
+                         bottom: nil,
+                         trailing: view.trailingAnchor,
+                         padding: UIEdgeInsets(top: 50, left: 30, bottom: 0, right: 8))
+        
+        saleCollectionView.anchor(top: cityLabel.bottomAnchor,
                                   leading: view.leadingAnchor,
                                   bottom: nil,
-                                  trailing: view.trailingAnchor,
-                                  padding: UIEdgeInsets(top: 10, left: 0, bottom: 0, right: 0))
+                                  trailing: view.trailingAnchor)
         saleCollectionView.heightAnchor.constraint(equalToConstant: 180).isActive = true
         
         sectionCollectionView.anchor(top: saleCollectionView.bottomAnchor,

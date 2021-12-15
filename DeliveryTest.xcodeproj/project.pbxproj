@@ -82,10 +82,36 @@
 			children = (
 				1F28B2D12768F38500EF3DBA /* SaleCollectionView.swift */,
 				1F28B2D42768F45800EF3DBA /* SaleCollectionViewCell.swift */,
+			);
+			path = SaleCollectionView;
+			sourceTree = "<group>";
+		};
+		1F28B2E4276A395000EF3DBA /* SectionsCollectionView */ = {
+			isa = PBXGroup;
+			children = (
 				1F28B2D8276905D400EF3DBA /* SectionsCollectionView.swift */,
 				1F28B2DA2769064F00EF3DBA /* SectionsCollectionViewCell.swift */,
 			);
-			path = SaleCollectionView;
+			path = SectionsCollectionView;
+			sourceTree = "<group>";
+		};
+		1F28B2E5276A39E200EF3DBA /* TabBar */ = {
+			isa = PBXGroup;
+			children = (
+				1FC34C952767A842008CC40E /* TabBarController.swift */,
+				1FC34CA72767AA9E008CC40E /* BacketViewController.swift */,
+				1F28B2E02769345800EF3DBA /* ProfileViewController.swift */,
+				1F28B2E22769346500EF3DBA /* ContactsViewController.swift */,
+			);
+			path = TabBar;
+			sourceTree = "<group>";
+		};
+		1F28B2E6276A39F100EF3DBA /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				1F28B2DE27691C5300EF3DBA /* Constraints.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 		1FC34C852767A842008CC40E = {
@@ -110,12 +136,9 @@
 				1FC34C912767A842008CC40E /* AppDelegate.swift */,
 				1FC34C932767A842008CC40E /* SceneDelegate.swift */,
 				1FC34CAB2767AD86008CC40E /* Scenes */,
-				1FC34C952767A842008CC40E /* TabBarController.swift */,
+				1F28B2E5276A39E200EF3DBA /* TabBar */,
 				1FC34CBD2767C24D008CC40E /* Networking */,
-				1FC34CA72767AA9E008CC40E /* BacketViewController.swift */,
-				1F28B2E02769345800EF3DBA /* ProfileViewController.swift */,
-				1F28B2E22769346500EF3DBA /* ContactsViewController.swift */,
-				1F28B2DE27691C5300EF3DBA /* Constraints.swift */,
+				1F28B2E6276A39F100EF3DBA /* Helpers */,
 				1FC34C972767A842008CC40E /* Main.storyboard */,
 				1FC34C9A2767A845008CC40E /* Assets.xcassets */,
 				1FC34C9C2767A845008CC40E /* LaunchScreen.storyboard */,
@@ -136,6 +159,7 @@
 			isa = PBXGroup;
 			children = (
 				1FC34CA52767A97C008CC40E /* MenuViewController.swift */,
+				1F28B2E4276A395000EF3DBA /* SectionsCollectionView */,
 				1F28B2D32768F44B00EF3DBA /* SaleCollectionView */,
 				1FC34CA92767AD1F008CC40E /* MenuCell.swift */,
 				1FC34CAD2767ADAE008CC40E /* MenuPresenter.swift */,
